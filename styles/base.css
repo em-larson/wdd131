@@ -1,0 +1,108 @@
+body {
+    /* display: grid; */
+    /* grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(10, 1fr); */
+    font-family: Cambria, Georgia, serif;
+    /* font-size: 30px; */
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 48px;
+
+}
+
+header {
+    background-color: #362c4b;
+    grid-column: 1/4;
+    color: white;
+    border-radius: 25px;
+}
+
+#course-title {
+    grid-column: 1/3;
+    background-color: #362c4b;
+    /* width: 100%; */
+    padding-top: 20px;
+    display: flex;
+    place-self: center;
+    font-family: Cambria, Georgia, serif;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+nav {
+    background-color: #362c4b;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+#cover {
+    grid-row: 3/6;
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+main {
+    /* background-color: #988fac;
+    border: #362c4b; */
+    /* border-style: solid;
+    border-radius: 25px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin: 30px;
+}
+
+.card {
+    grid-column: 1/4;
+    background-color: #988fac;
+    border: #362c4b;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#aside {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    margin: 10px;
+    display: grid;
+    padding: 20px;
+    background-color: #988fac;
+    border: #362c4b;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+#aside a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    line-height: 20px;
+    padding-top: 20px;
+}

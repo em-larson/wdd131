@@ -64,14 +64,11 @@ nav a:hover {
 }
 
 div {
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 1fr;
 }
 
 figure {
-    /* grid-column: 1/2; */
     align-items: center;
 }
 

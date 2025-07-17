@@ -31,12 +31,7 @@
         text-decoration: underline;
     }
 
-
-    /*gotta change this stuff here to make it more columns*/
-
     div {
-        /* display: flex;
-    flex-wrap: wrap; */
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
         grid-gap: 1rem;

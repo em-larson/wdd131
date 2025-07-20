@@ -17,4 +17,5 @@ function windchill(temp, windspeed) {
     }
 }
 
-document.getElementById("windchill").innerHTML = ``;
+
+document.querySelector(".windchill").innerHTML = (windchill(71, 7.2));

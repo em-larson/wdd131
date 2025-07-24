@@ -1,7 +1,12 @@
+:root {
+    --primary: rgb(71, 91, 128);
+    --secondary: rgb(233, 216, 195, .8);
+}
+
+
 body {
 
     font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     margin: 0;
@@ -10,7 +15,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(white, rgb(71, 91, 128));
+    background-image: linear-gradient(white, --primary);
     padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -35,7 +40,7 @@ img {
 
 #data,
 #weather {
-    background: rgb(233, 216, 195, .8);
+    background: var(--secondary);
     border-radius: 1rem;
     padding: 1rem;
     display: grid;
@@ -49,8 +54,16 @@ h2 {
     text-align: center;
 }
 
-#cloudy::before {
+/* #cloudy::after {
     content: url(../images/weather.svg);
+    max-width: 10px;
+} */
+
+svg {
+    display: none;
+}
+
+svg::after {
     max-width: 10px;
 }
 
@@ -68,7 +81,7 @@ h2 {
 }
 
 footer {
-    background-image: linear-gradient(rgb(71, 91, 128), white);
+    background-image: linear-gradient(--primary, white);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;

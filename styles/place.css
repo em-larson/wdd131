@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(white, --primary);
+    background-image: linear-gradient(white, var(--primary));
     padding-top: 2rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -81,7 +81,7 @@ svg::after {
 }
 
 footer {
-    background-image: linear-gradient(--primary, white);
+    background-image: linear-gradient(var(--primary), white);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;

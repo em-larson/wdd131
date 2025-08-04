@@ -1,0 +1,107 @@
+header,
+footer {
+    background-color: rgb(226, 111, 82);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 96%;
+}
+
+.wf,
+#thanks {
+    background-color: rgba(226, 111, 82, 0.466);
+    width: 92%;
+    margin: auto;
+    display: block;
+    padding: 1rem;
+    border-radius: 6px;
+    min-height: 200px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+.wf label {
+    display: block;
+}
+
+.wf select,
+.wf input[type="date"],
+.wf input[type='text'],
+.wf textarea {
+    display: block;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 90%;
+    max-width: 400px;
+    appearance: none;
+    border: solid 1px #999;
+}
+
+.wf textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* This section figures out the star rating system */
+#starRating {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+#starRating input {
+    display: none;
+}
+
+#starRating>label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: rgb(28, 15, 85);
+}
+
+#starRating label:hover {
+    color: rgb(243, 20, 39);
+    transition: .2s ease;
+}
+
+#starRating label:active::before {
+    transform: scale(1.1);
+}
+
+#starRating label::before {
+    content: '\2606';
+    /* position: absolute; */
+    top: 0px;
+    line-height: 26px;
+}
+
+#starRating input:checked~label:before {
+    content: "\2605";
+}
+
+@-moz-document url-prefix() {
+    #starRating input:checked~label:before {
+        font-size: 36px;
+        line-height: 21px;
+    }
+}
+
+.wf input[type="submit"] {
+    margin: 1rem 2% 1rem 2%;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: medium;
+}

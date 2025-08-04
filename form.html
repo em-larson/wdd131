@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Form</title>
+    <meta name="description" content="A form with a confirmation page">
+    <meta name="author" content="Emily Larson">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf">
+            <!---->
+            <label class="title">Product Name*
+                <select name="product" id="product" required>
+                </select>
+            </label>
+
+            <!---->
+            <div class="title" required>Overall Rating*</div>
+            <div id="starRating">
+                <input type="radio" id="star1" name="stars" value="1">
+                <label for="star1"></label>
+                <input type="radio" id="star2" name="stars" value="2">
+                <label for="star2"></label>
+                <input type="radio" id="star3" name="stars" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star4" name="stars" value="4">
+                <label for="star4"></label>
+                <input type="radio" id="star5" name="stars" value="5">
+                <label for="star5"></label>
+            </div>
+            <!---->
+            <label class="title">Date of Installation*<input type="date" name="installationDate" id="installdate"
+                    required></label>
+            <!---->
+            <div class="title">Useful Features</div>
+            <label><input type="checkbox" id="durability" name="Durability" value="yes">Durabiltiy</label>
+            <label><input type="checkbox" id="functional" name="Functionality" value="yes">Functionality</label>
+            <label><input type="checkbox" id="looks" name="Looks" value="yes">Looks</label>
+            <label><input type="checkbox" id="quality" name="Quality" value="yes">Quality</label>
+
+            <!---->
+            <label for="wreview" class="title">Written Review (optional)</label>
+            <textarea id="wreview" name="myText" rows="5" cols="40" placeholder="Type your message..."></textarea>
+            <label class="title">User Name (optional)<input type="text" name="username" id="username"> </label>
+            <input type="submit" value="Send My Review">
+
+
+        </form>
+    </main>
+    <footer>
+        <p ID="copyright"></p>
+        <p ID="modified"></p>
+    </footer>
+</body>
+
+</html>

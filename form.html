@@ -20,13 +20,14 @@
             <!---->
             <label class="title">Product Name*
                 <select name="product" id="product" required>
+                    <option disabled>Select a Product ▼</option>
                 </select>
             </label>
 
             <!---->
-            <div class="title" required>Overall Rating*</div>
+            <div class="title">Overall Rating*</div>
             <div id="starRating">
-                <input type="radio" id="star1" name="stars" value="1">
+                <input type="radio" id="star1" name="stars" value="1" required>
                 <label for="star1"></label>
                 <input type="radio" id="star2" name="stars" value="2">
                 <label for="star2"></label>

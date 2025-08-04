@@ -34,12 +34,12 @@ if (selections) {
 
 
 
-        let placeholder = document.createElement('option');
-        placeholder.value = "";
-        placeholder.textContent = "Select a Product ▼";
-        placeholder.disabled = true;
-        placeholder.selected = true;
-        selections.appendChild(placeholder);
+        // let placeholder = document.createElement('option');
+        // placeholder.value = "";
+        // placeholder.textContent = "Select a Product ▼";
+        // placeholder.disabled = true;
+        // placeholder.selected = true;
+        // selections.appendChild(placeholder);
 
         products.forEach(element => {
 
@@ -51,6 +51,8 @@ if (selections) {
 
     }
     createList(products);
+
+    selections.selectedIndex = 0;
 }
 
 // --------------- Footer Info ----------------------------//

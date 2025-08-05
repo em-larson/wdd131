@@ -1,0 +1,252 @@
+:root {
+    --primaryB: #E3B26D;
+    --primaryF: #0B2129;
+    --secondaryO: #F09413;
+    --secondaryB: #57C9BC;
+}
+
+body {
+    font-family: 'Winky Rough', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    background: var(--primaryB);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+}
+
+
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--primaryF);
+    margin: auto;
+}
+
+button {
+    display: none;
+}
+
+nav {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: flex;
+
+    justify-content: space-around;
+    background-color: var(--secondaryB);
+}
+
+nav a {
+    padding: .5rem 3rem .5rem 3rem;
+    margin: auto;
+    text-decoration: none;
+    color: var(--primaryF);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #F09413;
+}
+
+#hero {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--primaryF);
+    text-align: center;
+}
+
+p {
+    color: var(--primaryF);
+    width: 90%;
+    margin: auto;
+    font-size: large;
+    /* text-align: center; */
+}
+
+#photos,
+.experts {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    /* background-color: var(--secondaryB);
+    border-radius: 20px;
+    border: solid 5px var(--primaryF); */
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--primaryB);
+    border: solid 5px var(--primaryF);
+}
+
+.blurb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.blurb figcaption {
+    font-weight: bolder;
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+
+h3 {
+    font-size: 3rem;
+    color: var(--primaryF);
+    text-align: center;
+}
+
+.apply {
+    width: 82%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--primaryB);
+    border: solid 5px var(--primaryF);
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+footer {
+    background: var(--primaryB);
+    padding: 2rem;
+    text-align: center;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    width: 90%;
+    margin: auto;
+}
+
+.infobox {
+    background-color: #E3B26D;
+    border: solid 3px #0B2129;
+    border-radius: 20px;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+#infobox1 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr;
+
+    h3 {
+        grid-column: 1/3;
+    }
+
+    .label {
+        text-align: right;
+        grid-column: 1/2;
+    }
+
+    .value {
+        text-align: left;
+    }
+}
+
+#infobox2 {
+    nav {
+        background-color: #E3B26D;
+    }
+
+    nav a {
+        background-color: #ecebea;
+        padding: .5rem;
+        border-radius: 20px;
+        border: solid 3px var(--primaryF)
+    }
+}
+
+/* #questionaire {
+    p {
+        text-align: center;
+    }
+} */
+
+.centered {
+    text-align: center;
+}
+
+form {
+    background-color: #E3B26D;
+    display: block;
+    padding: 2rem;
+    width: 450px;
+    margin: auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+
+    label {
+        font-weight: bold;
+        display: block;
+        padding-top: 1rem;
+
+    }
+
+    input,
+    select {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        padding: .75rem;
+    }
+
+    textarea {
+        resize: vertical;
+        overflow: auto;
+    }
+
+    input[type="submit"] {
+        margin-top: 2rem;
+        font-size: medium;
+        box-shadow: 1px 1px 4px var(--primaryF);
+    }
+}

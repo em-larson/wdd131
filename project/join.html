@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty Club | Join Us</title>
+    <meta name="description" content="Instructions and information on how to join the club">
+    <meta name="author" content="Emily Larson">
+    <link rel="stylesheet" href="styles/crafty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/crafty.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="crafty club logo" height="250" id="logo">
+        <h1>Crafty Club</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <a class="hyperlink" href="index.html">About Us</a>
+            <a class="hyperlink" href="experts.html">Meet the Experts</a>
+            <a class="hyperlink" href="join.html">Join Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Want to Join the Club?</h2>
+        <div id="info">
+            <section class="infobox" id="infobox1">
+                <h3>Weekly Meetings</h3>
+                <p class="label">When:</p>
+                <p class="value">Thursdays @ 6:30</p>
+                <p class="label">Address:</p>
+                <p class="value">1223 S. Stevens Way Unit #3 <br> Ogden Utah, 84401</p>
+            </section>
+            <section class="infobox" id="infobox2">
+                <h3>Check out our Socials!</h3>
+                <nav class="socials">
+                    <a href="https://facebook.com">
+                        <img src="images/facebook.webp" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src="images/instagram.webp" alt="Twitter">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.webp" alt="Instagram">
+                    </a>
+                </nav>
+            </section>
+        </div>
+        <section>
+            <h3>Need More Info?</h3>
+            <p class="centered">If you have any other questions about the Crafty Club, fill out the survey below and we
+                will be happy to
+                get in touch with you!</p>
+            <form method="get" id="questionaire">
+                <!--Need to figure out how to get a confirmation page just on that section. I think maybe something with js?-->
+                <label>Name*<input type="text" name="fullName" id="fullName" required></label>
+                <label>Email*<input type="text" name="email" id="email" required></label>
+                <label for="question">Question*</label>
+                <textarea id="question" name="question" rows="5" cols="55"
+                    placeholder="Type your Question here..."></textarea>
+                <input type="submit" value="Send My Question" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p ID="copyright"></p>
+        <p ID="modified"></p>
+    </footer>
+
+</body>
+
+</html>

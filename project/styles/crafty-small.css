@@ -78,9 +78,9 @@
         flex-direction: column;
     }
 
-    .infobox2 nav {
+    /* .infobox2 nav {
         background-color: none;
-    }
+    } */
 
     #questionaire {
         max-width: 100%;

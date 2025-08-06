@@ -10,7 +10,6 @@
 
     #logo {
         width: 100%;
-        /* height: auto; */
     }
 
     #menu {
@@ -87,16 +86,17 @@
 
     #questionaire {
         max-width: 100%;
-
-        input {
-            width: 92%;
-            max-width: 400px;
-        }
-
-        textarea {
-            resize: both;
-            width: 92%;
-            max-width: 420px;
-        }
     }
+
+    #questionaire input {
+        width: 92%;
+        max-width: 400px;
+    }
+
+    #questionaire textarea {
+        resize: both;
+        width: 92%;
+        max-width: 420px;
+    }
+
 }

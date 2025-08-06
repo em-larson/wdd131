@@ -17,7 +17,24 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-//submit button on join page//
+//submit button on join page (includes conditional formatting)//
+
+function thankyouMessage(formBox) {
+    formBox.innerHTML = "";
+
+    let thanks = document.createElement("h3");
+    let paragraph = document.createElement("p");
+    let count = document.createElement("p");
+
+    thanks.textContent = "Thank You!"
+    paragraph.textContent = "We have recieved your question. You can expect to hear back from us within a week. We look forward to talking with you!"
+    count.innerHTML = visits();
+
+    formBox.appendChild(thanks);
+    formBox.appendChild(paragraph);
+
+    formBox.appendChild(count);
+};
 
 const submitQuestion = document.getElementById('submit');
 
@@ -30,16 +47,7 @@ if (submitQuestion) {
 
         if (formBox.checkValidity()) {
 
-            formBox.innerHTML = "";
-
-            let thanks = document.createElement("h3");
-            let paragraph = document.createElement("p");
-
-            thanks.textContent = "Thank You!"
-            paragraph.textContent = "We have recieved your question. You can expect to hear back from us within a week. We look forward to talking with you!"
-
-            formBox.appendChild(thanks);
-            formBox.appendChild(paragraph);
+            thankyouMessage(formBox);
         }
 
         else {
@@ -48,4 +56,23 @@ if (submitQuestion) {
 
     }))
 };
+
+//sets and accesses local storage (displayed on form submition page)//
+
+function visits() {
+
+    let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0
+
+    numVisits++;
+    localStorage.setItem("numVisits-ls", numVisits);
+
+    if (numVisits !== 1) {
+        return `<br> You have submitted ${numVisits} questions.`;
+    }
+
+    else {
+        return `<br> You have submitted your first question.`
+    }
+};
+
 

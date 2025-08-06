@@ -78,10 +78,8 @@
         flex-direction: column;
     }
 
-    .infobox2 {
-        nav {
-            background-color: none;
-        }
+    .infobox2 nav {
+        background-color: none;
     }
 
     #questionaire {

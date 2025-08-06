@@ -75,4 +75,64 @@ function visits() {
     }
 };
 
+//create image cards for the album section  (uses both an array and object)//
 
+const photos = [
+    {
+        artistName: "Jessi Smith",
+        type: "Cross-stitch of Lilacs",
+        image: "images/crosstitch.webp",
+    },
+    {
+
+        artistName: "Jason Wright",
+        type: "Watercolor Paints",
+        image: "images/watercolor.webp",
+    },
+    {
+        artistName: "Emma Smithe",
+        type: "Knitted Scarf",
+        image: "images/knitting.webp",
+    },
+    {
+        artistName: "Tessa Barrow",
+        type: "Halloween Wreath",
+        image: "images/wreath.webp",
+    },
+    {
+        artistName: "Bianca Cascadan",
+        type: "Resin DnD Dice",
+        image: "images/dice.webp",
+    },
+    {
+        artistName: "Dan Xavier",
+        type: "Digital Art",
+        image: "images/digital.webp",
+    }
+]
+
+function createAlbum() {
+    document.getElementById('photos').innerHTML = "";
+
+    photos.forEach((photo) => {
+        let card = document.createElement("figure");
+        let picture = document.createElement("img");
+        let caption = document.createElement("figcaption");
+
+        picture.setAttribute("src", photo.image);
+        picture.setAttribute("alt", photo.alternate);
+        picture.setAttribute("loading", "Lazy");
+        caption.innerHTML = photo.type;
+
+        card.classList.add("album");
+        card.appendChild(picture);
+        card.appendChild(caption);
+
+        document.getElementById('photos').appendChild(card);
+
+    });
+};
+
+if (document.getElementById('photos')) {
+    createAlbum();
+}

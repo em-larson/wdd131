@@ -8,6 +8,8 @@
     <meta name="description" content="Instructions and information on how to join the club">
     <meta name="author" content="Emily Larson">
     <link rel="stylesheet" href="styles/crafty.css">
+    <link rel="stylesheet" href="styles/crafty-small.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +23,7 @@
         <img src="images/logo.jpg" alt="crafty club logo" height="250" id="logo">
         <h1>Crafty Club</h1>
         <button type="button" id="menu"></button>
-        <nav>
+        <nav id="mainNav">
             <a class="hyperlink" href="index.html">About Us</a>
             <a class="hyperlink" href="experts.html">Meet the Experts</a>
             <a class="hyperlink" href="join.html">Join Us</a>
@@ -62,8 +64,8 @@
                 <label>Name*<input type="text" name="fullName" id="fullName" required></label>
                 <label>Email*<input type="text" name="email" id="email" required></label>
                 <label for="question">Question*</label>
-                <textarea id="question" name="question" rows="5" cols="55"
-                    placeholder="Type your Question here..."></textarea>
+                <textarea id="question" name="question" rows="5" placeholder="Type your Question here..."
+                    required></textarea>
                 <input type="submit" value="Send My Question" id="submit">
             </form>
         </section>

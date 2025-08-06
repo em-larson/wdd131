@@ -1,0 +1,102 @@
+@media (max-width:600px) {
+
+    h1 {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    #logo {
+        width: 100%;
+        /* height: auto; */
+    }
+
+    #menu {
+        display: flex;
+        max-width: 800px;
+        margin: auto;
+        font-size: 40px;
+        border: 0;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: var(--primaryB);
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    #mainNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #mainNav a {
+        display: none;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    #mainNav a:hover {
+        text-decoration: underline;
+        background-color: #F09413;
+    }
+
+    #mainNav.open a {
+        display: block;
+    }
+
+    #hero {
+        display: none;
+    }
+
+    #photos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blurb {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infobox2 {
+        nav {
+            background-color: none;
+        }
+    }
+
+    #questionaire {
+        max-width: 100%;
+
+        input {
+            width: 92%;
+            max-width: 400px;
+        }
+
+        textarea {
+            resize: both;
+            width: 92%;
+            max-width: 420px;
+        }
+    }
+}
